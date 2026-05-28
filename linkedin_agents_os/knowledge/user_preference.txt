@@ -1,15 +1,37 @@
 # PERFIL DE MIGUEL
 - Nombre: Miguel Angel Giraldo
-- Rol actual: Desarrollador de Software / AI Architect
-- Proyecto Principal: LinkedIn-Agent-OS (Un sistema de agentes autónomos locales para automatizar el crecimiento en LinkedIn usando Ollama y CrewAI).
+- Rol actual: Desarrollador de Software / AI Architect / Analista de empresas y bosla
+# PROYECTO PRINCIPAL: pri0
+- Nombre del proyecto: pri0 (se escribe con un cero al final).
+- Qué es: Un Micro-SaaS de infraestructura de IA soberana y optimización de costes.
+- El Problema que resuelve: Las startups sufren de "token anxiety" (ansiedad por el gasto variable de tokens). Un mal bucle en un agente de IA con APIs comerciales (como OpenAI o Anthropic) puede quebrar el presupuesto de una startup en una noche.
+- La Solución de pri0: Permite a las startups desplegar y controlar modelos de Inteligencia Artificial según sus necesidades específicas, pero bajo un modelo de Tarifas Planas. Al centralizar y optimizar el despliegue, eliminamos el coste variable por token y blindamos el presupuesto de la empresa.
+
+# PÚBLICO OBJETIVO (A quién le hablan mis agentes)
+- CTOs, directores de ingeniería, Tech Leads y Founders de Startups de base tecnológica.
+- Desarrolladores que quieren integrar IA en sus productos sin perder el control financiero.
+
+# PALABRAS CLAVE Y CONCEPTOS PARA LOS POSTS (Copiar en el código)
+- "Token Anxiety" (Ansiedad por coste de tokens).
+- Predictibilidad financiera en IA.
+- Tarifas planas de LLMs.
+- Despliegue bajo demanda (On-demand deployment).
+- Control de gasto en infraestructura AI.
+
+# ÁNGULOS DE CONTENIDO QUE LOS AGENTES DEBEN USAR PARA PRI0:
+1. Ángulo de Dolor: "¿Cuánto te costó ayer el tonto bug de un bucle infinito en tu script de OpenAI? Con pri0 eso no pasa."
+2. Ángulo Técnico/Estratégico: Cómo estructurar la arquitectura de una startup para pasar de pago por token a tarifa plana con modelos dedicados.
+3. Ángulo de Transparencia (Build in Public): Contar cómo yo mismo uso herramientas locales (como este sistema de agentes de CrewAI y Ollama) para maquetar, validar y desarrollar pri0 en mi MacBook sin gastar un solo euro en APIs externas.
 
 # MI TONO Y ESTILO DE ESCRITURA
 - Directo, técnico pero cercano (de dev a dev).
 - Me gusta empezar los posts con un gancho fuerte (un problema real o un mito roto).
 - Odio el texto corporativo aburrido y las introducciones genéricas de la IA.
 - Uso frases cortas y muchos saltos de línea para facilitar la lectura en móviles.
+-PROHIBIDO usar las siguientes palabras o estructuras en mis posts: 'En el dinámico mundo tecnológico actual', 'crucial', 'revolucionario', 'fascinante', 'adéntrate en', 'implementación perfecta', 'un antes y un después'. Si usas estas palabras, el post fallará. Prefiere un lenguaje de ingeniería directo: 'Configuré', 'Falló', 'Lo arreglé', 'Código limpio'.
 
 # TEMAS PRINCIPALES DE MI CONTENIDO
 - Inteligencia Artificial Local (Ollama, frameworks de agentes).
 - Desafíos de desarrollo en macOS (gestión de entornos con Conda, Python, dependencias).
 - Automatización de procesos y optimización de flujos de trabajo.
+-Emprendimiento analisis financiero y inversion en Startups
