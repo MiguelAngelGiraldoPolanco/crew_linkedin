@@ -1,4 +1,15 @@
-User name is John Doe.
-User is an AI Engineer.
-User is interested in AI Agents.
-User is based in San Francisco, California.
+# PERFIL DE MIGUEL
+- Nombre: Miguel Angel Giraldo
+- Rol actual: Desarrollador de Software / AI Architect
+- Proyecto Principal: LinkedIn-Agent-OS (Un sistema de agentes autónomos locales para automatizar el crecimiento en LinkedIn usando Ollama y CrewAI).
+
+# MI TONO Y ESTILO DE ESCRITURA
+- Directo, técnico pero cercano (de dev a dev).
+- Me gusta empezar los posts con un gancho fuerte (un problema real o un mito roto).
+- Odio el texto corporativo aburrido y las introducciones genéricas de la IA.
+- Uso frases cortas y muchos saltos de línea para facilitar la lectura en móviles.
+
+# TEMAS PRINCIPALES DE MI CONTENIDO
+- Inteligencia Artificial Local (Ollama, frameworks de agentes).
+- Desafíos de desarrollo en macOS (gestión de entornos con Conda, Python, dependencias).
+- Automatización de procesos y optimización de flujos de trabajo.
