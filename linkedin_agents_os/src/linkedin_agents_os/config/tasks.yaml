@@ -1,17 +1,23 @@
-research_task:
+tarea_redaccion:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Toma la nota técnica diaria proporcionada en el archivo Markdown (que detalla el avance del proyecto 'LinkedIn-Agent-OS', problemas con Conda/Python, o desarrollo de IA local) y redáctala en un post de LinkedIn de alto impacto. 
+    Debes estructurar el contenido siguiendo estas fases:
+    1. Un gancho (hook) de máximo 2 líneas que genere curiosidad o rompa un mito tech.
+    2. El núcleo técnico explicado de forma cercana, como de desarrollador a desarrollador.
+    3. Una sección de aprendizaje ("Lección aprendida").
+    Evita bloques de texto de más de dos frases seguidas. Usa saltos de línea dobles.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    Un primer borrador completo del post de LinkedIn estructurado para una lectura rápida (escaneable), con un tono técnico pero fresco.
+  agent: copywriter
 
-reporting_task:
+tarea_revision_critica:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Analiza minuciosamente el borrador generado por el copywriter. Actúa como el filtro de calidad más estricto del algoritmo de LinkedIn. 
+    Debes auditar el texto buscando y eliminando:
+    - Palabras cliché de IA (ej. "En el panorama actual", "revolucionario", "crucial", "descubre cómo").
+    - Formatos densos que afecten negativamente al Dwell Time.
+    - Exceso de emojis o hashtags (máximo 2-3 hashtags muy relevantes al final).
+    Si el post parece generado por ChatGPT, reescribe las secciones artificiales para que suene 100% humano, directo y con autoridad técnica. Asegúrate de que termine con una pregunta abierta que incite al debate en comentarios.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    El post definitivo de LinkedIn en texto limpio, optimizado para el algoritmo, listo para copiar y pegar.
+  agent: critico
