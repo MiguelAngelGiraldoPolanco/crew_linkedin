@@ -1,54 +1,68 @@
-# LinkedinAgentsOs Crew
+# 🤖 LinkedIn Agents OS
 
-Welcome to the LinkedinAgentsOs Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+LinkedIn Agents OS is an automated content creation system built with **CrewAI**. It is designed to transform technical developer notes into high-impact, human-like LinkedIn posts, specifically optimized for B2B tech audiences, founders, and engineers.
 
-## Installation
+## 🎯 Overview
+The system leverages a multi-agent architecture to ensure content quality:
+1. **Copywriter Agent**: Converts complex technical concepts into engaging, scannable LinkedIn posts.
+2. **Quality Critic Agent**: Audits the content against LinkedIn's algorithm to maximize *Dwell Time* and remove "AI-sounding" clichés.
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## 🏗 Project Structure
 
-First, if you haven't already, install uv:
+```text
+linkedin_agents_os/
+├── knowledge/          # User preferences & style guides
+├── src/
+│   ├── linkedin_agents_os/
+│   │   ├── config/     # Agent and Task definitions (YAML)
+│   │   ├── crew.py     # Crew orchestration logic
+│   │   └── main.py     # Entry point and CLI commands
+└── pyproject.toml      # Project metadata & dependencies
 
-```bash
-pip install uv
-```
+## ⚙️ Configuration & Personalization
+The core of the system is the knowledge/user_preference.txt file. This acts as the "Brain" of the agents, containing:
 
-Next, navigate to your project directory and install the dependencies:
+Project Context: Details about your current focus (e.g., pri0).
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+Tone & Style: Direct, technical, and human-centric guidelines.
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+Negative Constraints: A strictly forbidden list of corporate buzzwords to avoid.
 
-- Modify `src/linkedin_agents_os/config/agents.yaml` to define your agents
-- Modify `src/linkedin_agents_os/config/tasks.yaml` to define your tasks
-- Modify `src/linkedin_agents_os/crew.py` to add your own logic, tools and specific args
-- Modify `src/linkedin_agents_os/main.py` to add custom inputs for your agents and tasks
+## 🚀 Installation
+Clone the repository:
 
-## Running the Project
+Bash
+git clone [https://github.com/tu-usuario/linkedin_agents_os.git](https://github.com/tu-usuario/linkedin_agents_os.git)
+cd linkedin_agents_os
+Install dependencies:
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Bash
+pip install -r requirements.txt
+Set up Environment Variables:
+Create a .env file in the root directory:
 
-```bash
-$ crewai run
-```
+Fragmento de código
+OPENAI_API_KEY=sk-...
+SERPER_API_KEY=...
+MODEL=gpt-4o
 
-This command initializes the linkedin_agents_os Crew, assembling the agents and assigning them tasks as defined in your configuration.
+##🛠 Usage
+The project provides a CLI interface through linkedin_agents_os:
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+Run the crew:
+linkedin_agents_os run
 
-## Understanding Your Crew
+Train the agents:
+linkedin_agents_os train <n_iterations> <filename>
 
-The linkedin_agents_os Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+Test performance:
+linkedin_agents_os test <n_iterations> <eval_llm>
 
-## Support
+Custom Trigger:
+linkedin_agents_os run_with_trigger "<JSON_PAYLOAD>"
 
-For support, questions, or feedback regarding the LinkedinAgentsOs Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## 💡 Why this project?
+This tool solves the "Content vs. Coding" dilemma. Instead of spending hours writing, you feed your daily dev logs (Conda issues, architecture decisions, AI implementation details) and get a professional, algorithm-ready post in seconds. It ensures consistency and maintains a "Build in Public" presence without the burnout.
 
-Let's create wonders together with the power and simplicity of crewAI.
+## 📜 License
+MIT © [Miguel Ángel Giraldo Polanco]
