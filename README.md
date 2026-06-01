@@ -18,7 +18,7 @@ linkedin_agents_os/
 │   │   ├── crew.py     # Crew orchestration logic
 │   │   └── main.py     # Entry point and CLI commands
 └── pyproject.toml      # Project metadata & dependencies
-
+```
 ## ⚙️ Configuration & Personalization
 The core of the system is the knowledge/user_preference.txt file. This acts as the "Brain" of the agents, containing:
 
@@ -31,36 +31,43 @@ Negative Constraints: A strictly forbidden list of corporate buzzwords to avoid.
 ## 🚀 Installation
 Clone the repository:
 
+```text
 Bash
 git clone [https://github.com/tu-usuario/linkedin_agents_os.git](https://github.com/tu-usuario/linkedin_agents_os.git)
 cd linkedin_agents_os
+```
 Install dependencies:
-
+```text
 Bash
 pip install -r requirements.txt
+```
 Set up Environment Variables:
 Create a .env file in the root directory:
 
-Fragmento de código
+```text
 OPENAI_API_KEY=sk-...
 SERPER_API_KEY=...
 MODEL=gpt-4o
-
+```
 ##🛠 Usage
 The project provides a CLI interface through linkedin_agents_os:
 
 Run the crew:
+```text
 linkedin_agents_os run
-
+```
 Train the agents:
+```text
 linkedin_agents_os train <n_iterations> <filename>
-
+```
 Test performance:
+```text
 linkedin_agents_os test <n_iterations> <eval_llm>
-
+```
 Custom Trigger:
+```text
 linkedin_agents_os run_with_trigger "<JSON_PAYLOAD>"
-
+```
 ## 💡 Why this project?
 This tool solves the "Content vs. Coding" dilemma. Instead of spending hours writing, you feed your daily dev logs (Conda issues, architecture decisions, AI implementation details) and get a professional, algorithm-ready post in seconds. It ensures consistency and maintains a "Build in Public" presence without the burnout.
 
